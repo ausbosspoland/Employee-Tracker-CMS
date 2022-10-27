@@ -1,25 +1,25 @@
-DROP TABLE IF EXISTS departments;
-DROP TABLE IF EXISTS roles;
-DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS Departments;
+DROP TABLE IF EXISTS Position;
+DROP TABLE IF EXISTS Employees;
 
-CREATE TABLE departments (
+CREATE TABLE Departments (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,                            
     name VARCHAR(25) NOT NULL
 );
 
-CREATE TABLE roles (
+CREATE TABLE Position (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,                            
-    position VARCHAR(25) NOT NULL,
-    department VARCHAR(25) NOT NULL,
-    salary DECIMAL (12, 2)
+    Position VARCHAR(25) NOT NULL,
+    Department VARCHAR(25) NOT NULL,
+    Salary DECIMAL (12, 2)
 );
 
-CREATE TABLE employees (
+CREATE TABLE Employees (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR(30) NOT NULL,
-    position VARCHAR(25) NOT NULL,
-    department VARCHAR(25) NOT NULL,
-    salary DECIMAL (12, 2),
-    manager VARCHAR(35) NOT NULL
+    Firstname VARCHAR(30) NOT NULL,
+    Lastname VARCHAR(30) NOT NULL,
+    Position VARCHAR(25) NOT NULL,
+    Department VARCHAR(25) NOT NULL,
+    Salary DECIMAL (12, 2),
+    Manager VARCHAR(35) NOT NULL
 );
