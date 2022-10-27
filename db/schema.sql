@@ -20,6 +20,6 @@ CREATE TABLE employees (
     lastname VARCHAR(30) NOT NULL,
     position VARCHAR(25) NOT NULL,
     department VARCHAR(25) NOT NULL,
-    salary , DECIMAL (12, 2),
+    salary DECIMAL (12, 2),
     manager VARCHAR(35) NOT NULL
 );
